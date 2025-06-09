@@ -28,7 +28,8 @@ public class TenantInterceptor implements HandlerInterceptor {
         EventContext.clear();
     }
 
-    public TenantInterceptor(@Autowired EventContext aEventContext) {
+    @Autowired
+    public TenantInterceptor(EventContext aEventContext) {
         this.eventContext = aEventContext;
     }
 
